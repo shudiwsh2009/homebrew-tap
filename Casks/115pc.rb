@@ -16,6 +16,8 @@ cask "115pc" do
     depends_on macos: ">= :high_sierra"
   
     app "115电脑版.app"
+
+    uninstall quit: "org.115pc.115Desktop"
   
     zap trash: [
       "~/Library/Application Support/115",

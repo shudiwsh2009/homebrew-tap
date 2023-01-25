@@ -15,6 +15,8 @@ cask "automatic-mouse-mover" do
     depends_on macos: ">= :high_sierra"
   
     app "amm.app"
+
+    uninstall quit: "com.pg.amm"
   
     zap trash: [
       "~/Library/Preferences/com.pg.amm.plist",
