@@ -2,18 +2,18 @@ cask "dotnet-sdk6" do
 	arch arm: "arm64", intel: "x64"
 
 	on_intel do
-    	version "6.0.407,91b09d38-854f-4888-ae10-b337b8c42045,3207fd5f87fcc22959311e588e531947"
-    	sha256 "a1ca85f4b2b976afb7c053cebf7f29c72a605473ba3df127af8cb2679bc38432"
-  	end
-  	on_arm do
-    	version "6.0.407,e953e1ca-4e28-4e40-b3de-c0bfce0596f1,43ec5885784a56be964baaf67b4a4742"
-    	sha256 "c319c9f9bf3de9e17254ba596cc044e807bc5987e8d27f088741221ae441f86e"
-  	end
+		version "6.0.407,91b09d38-854f-4888-ae10-b337b8c42045,3207fd5f87fcc22959311e588e531947"
+		sha256 "a1ca85f4b2b976afb7c053cebf7f29c72a605473ba3df127af8cb2679bc38432"
+	end
+	on_arm do
+		version "6.0.407,e953e1ca-4e28-4e40-b3de-c0bfce0596f1,43ec5885784a56be964baaf67b4a4742"
+		sha256 "c319c9f9bf3de9e17254ba596cc044e807bc5987e8d27f088741221ae441f86e"
+	end
 
-  	url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv.second}/#{version.csv.third}/dotnet-sdk-#{version.csv.first}-osx-#{arch}.pkg"
-  	name ".NET SDK"
-  	desc "Developer platform"
-  	homepage "https://www.microsoft.com/net/core#macos"
+	url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv.second}/#{version.csv.third}/dotnet-sdk-#{version.csv.first}-osx-#{arch}.pkg"
+	name ".NET SDK"
+	desc "Developer platform"
+	homepage "https://www.microsoft.com/net/core#macos"
 
 	livecheck do
 		cask "dotnet"
@@ -37,8 +37,8 @@ cask "dotnet-sdk6" do
 	uninstall	pkgutil: [
 					"com.microsoft.dotnet.*",
 					"com.microsoft.netstandard.pack.targeting.*",
-			  	],
-			  	delete:  [
+				],
+				delete:  [
 					"/etc/paths.d/dotnet",
 					"/etc/paths.d/dotnet-cli-tools",
 				]
