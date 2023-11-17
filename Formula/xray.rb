@@ -2,14 +2,14 @@
 class Xray < Formula
   desc "Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration."
   homepage "https://xtls.github.io/"
-  version "1.8.3"
+  version "1.8.5"
   on_intel do
     url "https://github.com/XTLS/Xray-core/releases/download/v#{version}/Xray-macos-64.zip"
-    sha256 "924b2c314691ca0e5727ba08833b7114f9b0fed72aaefbfdc983d4019fcb9098"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
   on_arm do
     url "https://github.com/XTLS/Xray-core/releases/download/v#{version}/Xray-macos-arm64-v8a.zip"
-    sha256 "7b51481061906293757cebbe4aa5393de43a25c4f2006ba2f0759b4789842bdd"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
   license "MPL-2.0"
 
