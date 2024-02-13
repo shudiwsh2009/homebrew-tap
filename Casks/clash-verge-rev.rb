@@ -1,8 +1,8 @@
 cask "clash-verge-rev" do
 	arch arm: "aarch64", intel: "x64"
-    version "1.4.6"
-    sha256 arm:   "433ac66b08408efdd7cbbfa0394596200b2ac9b0518e22724a7644750bfa3c96",
-           intel: "b952c822038b10222d9165e9fd7e4c89a2e1d3a650f41f365d94dfdc66807788"
+    version "1.5.1"
+    sha256 arm:   "0948074499fb0301956564428f256872b7e643a196e239a898d1934f1121683c",
+           intel: "65965af2db12e34a25149462112963697cd747be90b48dc92a732cf06a43e8fd"
            
 	url "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
 	name "Continuation of Clash Verge"
