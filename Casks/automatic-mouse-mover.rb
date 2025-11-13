@@ -13,8 +13,6 @@ cask "automatic-mouse-mover" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :high_sierra"
-
   app "amm.app"
 
   uninstall quit: "com.pg.amm"
